@@ -1,8 +1,9 @@
 *The following is in markdown format. See the original files on thingiverse at https://www.thingiverse.com/thing:4595035/ and on github at https://github.com/DrGlaucous/G3/*
+
 **Important note:**
 This design is definitely still in its early stages. Files and documentation should be expected to change at any time.   
-*
-*
+
+
 After several weeks of possessing a completed prototype, I have finally had a chance to upload this to the public domain.
 
 This device is a pressurized hopper for Nerf rival rounds (HIRs) that can be worn on the user's back and piped into a blaster of choice.
