@@ -10,16 +10,18 @@ This device is a pressurized hopper for Nerf rival rounds (HIRs) that can be wor
 This design preforms a similar function as the ["Proton Pack"](https://outofdarts.com/products/proton-pack-hopper-feed-kit-build-it-yourself-12-5-balls-second), another pressurized round hopper designed by OutOfDarts, however, the systems used by each are designed quite differently from each other *(this is a fancy way of saying that I did not rip off OutOfDarts' design when producing this machine.)*.
 
 My primary inspiration for the functionality of this device is stemmed from [Bui1derBB's take on the design](https://www.reddit.com/r/Nerf/comments/ckqdpb/junk_jank_proton_pack/), primarily its impeller-like agitator.
-*
-*
+
+
+
 ##Print Settings:
 The parts used for the construction are not optimized for printing, so supports will have to be used. 
 
 I was able to print the vector on a large format printer I have access to, but if you do not have the ability to print 9x12 inch sheets, you may have to split the vector up into smaller parts
 
 There appears to be formatting issue below. Please refer to the github page for more information.
-*
-*
+
+
+
 For refrerence on how the machine should be assembled, please refer to either the exploded photograph or the source file (.skp) included with the archive. 
 
 Electronics are mounted on a 40x70mm perfboard that fits inside the "electronics housing" model. Currently, the ESC hangs out between the brushless motor and the housing, but should remain relatively shielded if the unit is placed into a modified backpack (See the images in the archieve). 
