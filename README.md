@@ -26,7 +26,7 @@ For refrerence on how the machine should be assembled, please refer to either th
 
 Electronics are mounted on a 40x70mm perfboard that fits inside the "electronics housing" model. Currently, the ESC hangs out between the brushless motor and the housing, but should remain relatively shielded if the unit is placed into a modified backpack (See the images in the archieve). 
 
-Required Hardware:
+## Required Hardware:
 * Cheese ball container (used as the primary "tank". Design of this tank may be different for different regions, but it needs to have a mouth roughly 16cm in diameter. The bulk containers distributed by food manufacturer UTZ usutally fit these requirements.
 * Arduino nano (or any other small microcontroller)
 * 40x70mm perfboard
