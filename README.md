@@ -13,7 +13,7 @@ My primary inspiration for the functionality of this device is stemmed from [Bui
 
 
 
-##Print Settings:
+#Print Settings:
 The parts used for the construction are not optimized for printing, so supports will have to be used. 
 
 I was able to print the vector on a large format printer I have access to, but if you do not have the ability to print 9x12 inch sheets, you may have to split the vector up into smaller parts
