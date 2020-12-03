@@ -12,8 +12,9 @@ This design preforms a similar function as the ["Proton Pack"](https://outofdart
 
 My primary inspiration for the functionality of this device is stemmed from [Bui1derBB's take on the design](https://www.reddit.com/r/Nerf/comments/ckqdpb/junk_jank_proton_pack/), primarily its impeller-like agitator.
 
-##Update 1
+## Update 1
 Version 2 has been released. This version has several important design improvements. The most important one is a smaller agitator well, allowing for faster and more reliable feeding. The main section also splits in half, now so the componets at the base can be acessed without reaching all the way through the tank.
+
 **Important note about this current interation: The fan has been flipped up vertically to make room in the now smaller agitator base, and because of this, the pack is no longer ambidextrous (as of now, it is left-handed). This issue CAN be resolved simply by mirroring various pieces. I will add other files for a right-handed setup to remedy this soon)**
 
 **Also Note: The agitator turbine is in need of some serious redesign. I uploaded the early prototype as it fit in this base. The agitator works, but needs lots of sanding, trial and error to do so. An updated agitator will be made avalible soon.***
