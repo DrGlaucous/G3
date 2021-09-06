@@ -2,7 +2,12 @@
 
 
 **Important note:**
-This design is definitely still in its early stages. Files and documentation should be expected to change at any time. *Please use the V2 files ONLY if you want a functional SuperCell. The V1 files were my 1st attempt, and have some serious issues that have been resolved in the V2 interation.*  
+This design is definitely still in its early stages. Files and documentation should be expected to change at any time.
+
+***Please use the V2 files ONLY if you want a functional SuperCell. The V1 files were my 1st attempt, and have some serious issues that have been resolved in the V2 interation. The only reason the old version is still here is for archival purposes.***  
+
+
+---
 
 
 After several weeks of possessing a completed prototype, I have finally had a chance to upload this to the public domain.
