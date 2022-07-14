@@ -74,7 +74,7 @@ void BlowerHandler(void)
     ESCServo.write(Angle);
   }
   else if(ESCServo.read() > IDLE_ANGLE &&
-  MillisecondTicks % 5 == 0 &&
+  MillisecondTicks % 10 == 0 &&
   MillisecondTicks != LastMillisecondTicks)//once every 10 milliseconds
   {
 
@@ -115,6 +115,7 @@ void IORead(void)
 #ifdef I2C
 void i2cRead(int byteCount)
 {
+	//TODO: handle input mapping and manual control timeout
 
   //we should get 3 bytes: one for trigger, one for fan, and one for motor
   if(byteCount != 3)//if this is not the case, break out
@@ -128,14 +129,19 @@ void i2cRead(int byteCount)
 
   //should read a sequence of 3 bytes containing the needed information
   isON = Wire.read();
-  Angle = Wire.read();
+  Angle = map(Wire.read(), 0, 255, IDLE_ANGLE, MAX_ANGLE);
   AgitatorSpeed = Wire.read();
 
 
 #ifdef DEBUG_MODE
   Serial.print(byteCount);
-  Serial.print(": ");
-  Serial.println(int(isON));
+  Serial.print(" || ");
+  Serial.print(int(isON));
+  Serial.print(" : ");
+  Serial.print(int(Angle));
+  Serial.print(" : ");
+  Serial.println(int(AgitatorSpeed));
+
 #endif
 
 
