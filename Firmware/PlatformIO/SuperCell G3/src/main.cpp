@@ -1,6 +1,6 @@
 //configuration (not enough options to warrant a completely new file)
 
-#define DEBUG_MODE//un-comment this to enable some serial printing of variables
+//#define DEBUG_MODE//un-comment this to enable some serial printing of variables
 
 
 #define I2C //use i2c for controlling the supercell (the supercell expects a 3-byte stream, one for on/off, one for fan, and one for Agitator speed)
@@ -64,6 +64,28 @@ void GetTicks(void)
 	MillisecondTicks = millis();
 	MicrosecondTicks = micros();
 }
+
+
+//lights the onbaord LED for the desired ammount of time, run it without arguments to have it count down using the system clock
+void StatusLED(int MilTime = 0, bool IsOn = false)
+{
+  static unsigned long EndMilTime{};
+
+  if(IsOn == true)
+  {
+    EndMilTime = MillisecondTicks + MilTime;//move to end time specified
+    digitalWrite(13, HIGH);//turn LED on
+  }
+
+  if(EndMilTime < MillisecondTicks)
+  {
+      digitalWrite(13, LOW);
+  }
+
+
+
+}
+
 
 //drives the blower
 void BlowerHandler(void)
@@ -132,6 +154,7 @@ void i2cRead(int byteCount)
   Angle = map(Wire.read(), 0, 255, IDLE_ANGLE, MAX_ANGLE);
   AgitatorSpeed = Wire.read();
 
+  StatusLED(10, true);
 
 #ifdef DEBUG_MODE
   Serial.print(byteCount);
@@ -169,6 +192,7 @@ void setup() {
   Serial.begin(9600);
 #endif
 
+  StatusLED(500, true);//startup blink
 
 }
 
@@ -176,6 +200,10 @@ void loop() {
 
   GetTicks();
 
+  //update status LED timeout
+  StatusLED();
+
+  //i2c uses callbacks, so there is no need to have it check for i2c in the mainloop
 #ifndef I2C
   IORead();
 #endif
