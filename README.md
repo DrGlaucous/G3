@@ -1,11 +1,7 @@
 *The following is in markdown format. See the original files on thingiverse at https://www.thingiverse.com/thing:4595035/ and on github at https://github.com/DrGlaucous/G3/*
 
 
-**Important note:**
-This design is definitely still in its early stages. Files and documentation should be expected to change at any time.
-
 ***Please use the V2 files ONLY if you want a functional SuperCell. The V1 files were my 1st attempt, and have some serious issues that have been resolved in the V2 interation. The only reason the old version is still here is for archival purposes.***  
-
 
 ---
 
